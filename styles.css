@@ -1,0 +1,186 @@
+body, html {
+    height: 100%; margin: 0; overflow-x: hidden;
+}
+nav {z-index: 2000; color: white;}
+nav a {color: white;}
+.navbar {margin-bottom: 0;} /*position: fixed; top: 0;}*/
+#myNavbar {float: right;}
+.bg {
+    /* The image used */
+    background-image: url("images/myspace.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#overlay {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 200;
+    /*cursor: pointer;*/
+}
+#name {color: white;
+    position: absolute;
+    top: 25%;
+    z-index: 1000;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10%;}
+.myname {font-size: 72px;}
+#main {position: absolute; top: 100%;}
+
+.sec_row_skills {margin-top: 30px;}
+#skills {padding: 20px 10%; margin: 100px 0;}
+.skill {width: 33%;}
+#skills .logo>img {max-height: 200px; display: block; margin: 0 auto;}
+.mysql_img {padding-top: 18%;}
+.lang {display: none; height: 170px;
+  text-align: center;
+    padding: 20px;
+    border: solid 1px #ccc;
+    /*margin: 10px 5px 70px;*/
+}
+.lang h1 {margin: -40px 0 20px;}
+.lang span {background-color: white;}
+.lang p {font-size: 20px;}
+.lang2 {display: none; height: 100px; text-align: center;}
+
+#about {margin: 50px 0;
+    width: 100%;
+    height: 200px;
+    overflow-y: hidden;
+    overflow-x: hidden;}
+#img_container {width: 200%; margin-left: -100px; }
+.about_me {margin: 0; height: 200px; float: left;}
+.filter {z-index: 5000; position: absolute;}
+
+#dark {background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    position: absolute;
+    height: 200px;
+    overflow-x: hidden;}
+
+#tagline {color: white;
+    margin-right: 50px;
+    position: absolute;
+    right: 50px; margin-top: 50px; text-align: right;}
+#tagline h1 {font-size: 50px;}
+
+#read {margin-top: 100px;}
+#view_container, #view_options {width:70%; margin: 0 auto; clear: both;}
+#resume {background-color: #2ec105;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    margin: 50px auto;
+    width: 220px; 
+    display: block;
+}
+#resume h3 {margin-top: 10px;}
+#r_links {width: 205px; margin: 0 auto;}
+#projects {margin: 20px auto 80px; clear: both;}
+#projects h2 {background-color: #f2f2f2; padding: 20px; width: 30%; height: 120px; margin:10px;text-align:center;}
+.glyphicon-arrow-right {font-size: 16px;}
+#view_options {
+    margin-bottom: 100px;
+}
+.view_icon {float: left; height: 50px;}
+.gluhc a {color: purple; font-family: cursive;}
+.csc a {font-family: "UniversRoman"; color: #c00; font-size:26px;}
+.fam_reu {}
+
+#contact {clear: both; padding: 20px 30%; margin: 50px 0;}
+#contact fieldset {}
+#contact p {margin: 20px 0 5px;}
+.form_field {width: 100%; line-height: 200%;}
+
+.tooltips {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltips .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size:14px; font-weight: normal;
+}
+
+.tooltips .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltips:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  #tagline {width: 70%; right: 0; margin-right: 20px; float: right;}
+}
+@media (max-width: 1110px) {
+  .lang h1 {font-size: 30px; margin-top: -35px;}
+  #tagline {width: 60%; margin-top: 20px;}
+}
+@media (max-width:992px) {
+  .line {display: none;}
+  .lang p {font-size: 18px;}
+  #contact {padding: 20px 20%;}
+}
+@media (max-width:900px) {
+    .lang h1 {font-size: 26px;}
+    #projects h2 {width: 28%;}
+}
+@media (max-width: 768px) {
+  .myname {font-size: 60px;}
+  #tagline {width: 10%; margin-top: 2px; left: 0; margin-left: 20px; text-align: left; float: left;}
+  #tagline h1 {font-size: 30px;}
+  #contact {padding: 20px 10%;}
+  /*.skill {margin: 0 auto;}*/
+  #skills .logo>img {max-height: 100px;}
+  .sec_row_skills {margin-top: 60px;}
+  .mysql_img {padding-top: 0; width: 100%;}
+  .lang {display: none;}
+  #r_links {margin-bottom:20px;}
+  #projects h2 {width:200px; margin:10px auto;}
+  .view_icon {margin-bottom: 30px;}
+}
