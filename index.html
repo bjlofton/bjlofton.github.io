@@ -195,10 +195,10 @@ if(agent.includes("Mobi")) {
   }
 }
 if(!agent.includes("Mobi")) {
-	window.onresize = function({
+	window.onresize = function(){
       location.reload();
       return false;
-    });
+    };
 }
 
 
