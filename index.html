@@ -194,6 +194,12 @@ if(agent.includes("Mobi")) {
       };
   }
 }
+if(!agent.includes("Mobi")) {
+	$(window).resize(function(){
+      location.reload();
+      return false;
+    });
+}
 
 
 var URL = 'https://c7jkdmj5df.execute-api.us-east-1.amazonaws.com/prod/-contact'
