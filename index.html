@@ -9,7 +9,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="icon" href="" type="image/jpg">
+<!-- <link rel="icon" href="" type="image/jpg"> -->
 <script src="page.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -195,7 +195,7 @@ if(agent.includes("Mobi")) {
   }
 }
 if(!agent.includes("Mobi")) {
-	window.onresize = function(){
+	window.onresize = function({
       location.reload();
       return false;
     });
