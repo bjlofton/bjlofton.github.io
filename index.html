@@ -195,7 +195,7 @@ if(agent.includes("Mobi")) {
   }
 }
 if(!agent.includes("Mobi")) {
-	$(window).resize(function(){
+	window.onresize = function(){
       location.reload();
       return false;
     });
