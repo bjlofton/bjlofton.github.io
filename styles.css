@@ -67,7 +67,6 @@ nav a {color: white;}
   width: 100%;
   height: auto;
 }
-.csc_img {border: solid 1px #f2f2f2;}
 
 .over2, .over1 {
   position: absolute;
@@ -145,6 +144,7 @@ nav a {color: white;}
   #name p {width: 80%;}
   #tagline {width: 10%; margin-top: 2px; left: 0; margin-left: 20px; text-align: left; float: left;}
   #tagline h1 {font-size: 30px;}
+  .csc_img {border: solid 1px #f2f2f2;}
   #contact {padding: 20px 10%;}
 
   #about, .about_me, #dark {height: 200px;}
