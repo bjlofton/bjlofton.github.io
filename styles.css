@@ -45,6 +45,7 @@ nav a {color: white;}
     position: absolute;
     top: 25%;
     z-index: 1000;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     padding: 0 10%;}
