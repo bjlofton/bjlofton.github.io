@@ -19,7 +19,7 @@
     <h1 class="myname">BRIANNA J. LOFTON</h1>
     <p>Hi! I am a full-stack web developer currently based in Raleigh, NC.  I build fully functioning, interactive web sites and web applications.</p>
 </div>
-<div id="main" class="col-sm-12">
+<div id="main" class="col-sm-12" onscroll="showOp()">
 
     <div id="projects" class="col-sm-12">
         <div class="col-sm-6">
@@ -145,5 +145,15 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
+var useragent = navigator.userAgent;
+function showOp() {
+	var y = document.getElementById("main").scrollTop;
+	if(useragent.includes("Mobi") && (y > 10)) {
+		//trigger overlay
+		document.getElementsByClassName("over1")[0].style.opacity = "0.8";
+	}
+}
+</script>
 </body>
 </html>
