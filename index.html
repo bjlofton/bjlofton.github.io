@@ -53,7 +53,7 @@
         <div id="img_container">
             <img src="images/greenway.jpg" class="about_me" alt="the greenway">
             <img src="images/me.jpg" class="about_me filter" alt="Photo of me">
-            <img src="images/atl.jpg" class="about_me" alt="ATL">
+            <img src="images/paris.jpg" class="about_me" alt="Paris">
             <img src="images/code_library.jpg" class="about_me" alt="hunt library">
             <img src="images/cupcake.jpg" class="about_me" alt="cupcake">
             <img src="images/battleship.jpg" class="about_me" alt="battleship">
@@ -147,12 +147,25 @@ $(document).ready(function() {
 
 <script>
 var useragent = navigator.userAgent;
-function showOp() {
-	var y = document.getElementById("main").scrollTop;
-	if(useragent.includes("Mobi") && (y > 10)) {
-		//trigger overlay
-		document.getElementsByClassName("over1")[0].style.opacity = "0.8";
+if(useragent.includes("Mobi")) {
+	function testScroll(ev) {
+		if(window.pageYOffset > 500) {
+			document.getElementsByClassName("over1")[0].style.opacity = "0.8";
+		}
+		else {
+			document.getElementsByClassName("over1")[0].style.opacity = "0";
+		}
+		if(window.pageYOffset > 700) {
+			document.getElementsByClassName("over2")[0].style.opacity = "0.8";
+			document.getElementsByClassName("over1")[0].style.opacity = "0";
+		} else {
+			document.getElementsByClassName("over2")[0].style.opacity = "0";
+		}
+		if(window.pageYOffset > 1050) {
+			document.getElementsByClassName("over2")[0].style.opacity = "0";
+		}
 	}
+	window.onscroll=testScroll;
 }
 </script>
 </body>
