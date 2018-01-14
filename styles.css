@@ -150,4 +150,18 @@ nav a {color: white;}
 
   #about, .about_me, #dark {height: 200px;}
   #img_container {margin-left: -100px;}
+    
+@media only screen 
+  and (max-device-width: 600px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .myname {font-size: 60px;}
+  #name p {width: 80%;}
+  #tagline {width: 10%; margin-top: 2px; left: 0; margin-left: 20px; text-align: left; float: left;}
+  #tagline h1 {font-size: 30px;}
+  .csc_img {border: solid 1px #f2f2f2;}
+  #contact {padding: 20px 10%;}
+
+  #about, .about_me, #dark {height: 200px;}
+  #img_container {margin-left: -100px;}
+}
 
