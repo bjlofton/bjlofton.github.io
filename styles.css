@@ -63,7 +63,7 @@ nav a {color: white;}
   width: 100%;
 }
 
-.proj_img {margin-bottom: 50px;
+.proj_img {margin-bottom: 30px;
   display: block;
   width: 100%;
   height: auto;
@@ -81,7 +81,7 @@ nav a {color: white;}
   transition: .5s ease;
 }
 .over1 {background-color: #c00;}
-.over2 {background-color: #68228b;}
+.over2 {background-color: purple;} /*#68228b;}*/
 
 .contain:hover .over1, .contain:hover .over2 {
   opacity: .8;
@@ -122,7 +122,7 @@ nav a {color: white;}
 #read {margin-top: 150px;}
 #view_container {width: 220px; margin: 0 auto;}
 
-.view_icon {width: 25%; margin: 20px 1%;}
+.view_icon {width: 15%; margin: 15px 5%;}
 
 #contact {clear: both; padding: 20px 30%;}
 #contact fieldset {}
