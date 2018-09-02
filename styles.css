@@ -191,3 +191,6 @@ nav a {color: white;}
   #img_container {margin-left: -100px;}
 }
 
+@media screen and (max-width: 300px) , screen and (max-height: 700px) {
+  #name {top: 15%;}
+}
