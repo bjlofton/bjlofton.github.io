@@ -18,7 +18,7 @@
 <div id="name">
     <h1 class="line">______</h1>
     <h1 class="myname">BRIANNA J. LOFTON</h1>
-    <p>Hi! I am a full-stack web developer currently based in Raleigh, NC.  I build fully functioning, interactive web sites and web applications.</p>
+    <p>Hi! I am a web developer currently based in Raleigh, NC.  I build fully functioning, interactive web sites and web applications.</p>
 	<div class="arrow bounce"><span class="glyphicon glyphicon-menu-down"></span></div>
 	
 </div>
@@ -94,7 +94,7 @@
 
 
 <script>
-
+//contact form (github pages does not support php, AWS work-around)
 var URL = 'https://c7jkdmj5df.execute-api.us-east-1.amazonaws.com/prod/-contact'
  
 $('#contact_form').submit(function (event) {
@@ -129,9 +129,7 @@ $('#contact_form').submit(function (event) {
   })
 })
 
-</script>
-
-<script>
+//click section, page scroll
 $(document).ready(function() {
     $( "#name" ).click(function() {
         $('html, body').animate({
@@ -146,9 +144,8 @@ $(document).ready(function() {
     });
 
 });
-</script>
 
-<script>
+//for mobile, layoff appears/disappears based on scroll
 var useragent = navigator.userAgent;
 if(useragent.includes("Mobi")) {
 	function testScroll(ev) {
